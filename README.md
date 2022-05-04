@@ -15,4 +15,4 @@ Projeto em React + Typescript + tailwind em react.
 - `npm install`
 
 ### Para rodar
-- `npm run start`
+- `npm run dev`
