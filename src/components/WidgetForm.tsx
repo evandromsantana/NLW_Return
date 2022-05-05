@@ -4,7 +4,7 @@ import bugImageUrl from '../assets/bug.svg';
 import ideaImageUrl from '../assets/idea.svg';
 import thoughtImageUrl from '../assets/thought.svg';
 
-export const feedbackTypes = {
+const feedbackTypes = {
     BUG: {
         title: 'Problema',
         image: {
@@ -14,13 +14,17 @@ export const feedbackTypes = {
     },
     IDEA: {
         title: 'Ideia',
+        image: {
         source: ideaImageUrl,
         alt: 'Imagem de uma lâmpada'
+        },
     },
     OTHER: {
         title: 'Outro',
+        image: {
         source: thoughtImageUrl,
         alt: 'Imagem de uma nuvem de pensamento'
+        },
     },
 };
 
@@ -34,20 +38,20 @@ export function WidgetForm() {
               <CloseButton />
             </header>
 
-            <div className="flex py-8 gap-2 w-full">
-                
-                {/* Object.entries(feedbackTypes).map(([key, value]) => {                 
+            <div className="flex py-8 gap-2 w-full">                
+                { Object.entries(feedbackTypes).map(([key, value]) => {                 
                     return (
                         <button
                             key={key}
                             className="bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-2 border-2 border-transparent hover:border-brand-500 focus:border-brand-500 focus:outline-none"
+                            // onclick={}
                             type="button"
                         >
                             <img src={value.image.source} alt={value.image.alt} />
                             <span>{value.title}</span>
                         </button>
                     )
-                }) */}
+                }) }
             </div>
              
 
