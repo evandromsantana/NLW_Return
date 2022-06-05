@@ -1,5 +1,5 @@
 
-# Projeto Feedback evento NLW Return
+# Projeto Feedback evento nlw-return-impulse-web
 
 Projeto feito por Evandro de Macêdo Santana
 [Linkedin](https://linkedin.com/in/evandro-m-santana)
@@ -16,3 +16,4 @@ Projeto em React + Typescript + tailwind em react.
 
 ### Para rodar
 - `npm run dev`
+
